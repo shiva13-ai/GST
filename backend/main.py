@@ -18,10 +18,10 @@ from dotenv import load_dotenv
 # ── Env ───────────────────────────────────────────────────────────────────────
 load_dotenv()
 
-NEO4J_URI       = os.getenv("NEO4J_URI",       "neo4j+s://5a216301.databases.neo4j.io")
+NEO4J_URI       = os.getenv("NEO4J_URI",       "neo4j+s://5eeeeeeee.databases.neo4j.io")
 NEO4J_USER      = os.getenv("NEO4J_USER",      "neo4j")
-NEO4J_PASSWORD  = os.getenv("NEO4J_PASSWORD",  "x-59XlSvxXX-l_3OrdOkyfEgYsjIK_rfitADUJl2400")
-GEMINI_KEY      = os.getenv("GEMINI_API_KEY", "AIzaSyDwKD2InOoSdAFgc3LCgNjo8adC5bm83zM")      # optional — falls back to rule-based
+NEO4J_PASSWORD  = os.getenv("NEO4J_PASSWORD",  "x-59XlSxxxxxxxxxxxxxxxxxx")
+GEMINI_KEY      = os.getenv("GEMINI_API_KEY", "AIzaSyDwKD2Ixxxxxxxxxxxxxxxxxx")      # optional — falls back to rule-based
 ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,http://localhost:3000").split(",")
 
 logging.basicConfig(level=logging.INFO)
@@ -558,4 +558,5 @@ async def get_reconciliation_data():
         return {"total": len(records), "records": records}
     except Exception as e:
         logger.error("reconciliation error: %s", e)
+
         raise HTTPException(status_code=500, detail="Failed to fetch reconciliation data.")
