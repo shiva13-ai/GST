@@ -1,0 +1,8 @@
+fastapi[standard]
+uvicorn
+neo4j
+pandas
+python-multipart
+python-dotenv
+networkx
+httpx
