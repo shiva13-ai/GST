@@ -21,7 +21,7 @@ load_dotenv()
 NEO4J_URI       = os.getenv("NEO4J_URI",       "neo4j+s://5eeeeeeee.databases.neo4j.io")
 NEO4J_USER      = os.getenv("NEO4J_USER",      "neo4j")
 NEO4J_PASSWORD  = os.getenv("NEO4J_PASSWORD",  "x-59XlSxxxxxxxxxxxxxxxxxx")
-GEMINI_KEY      = os.getenv("GEMINI_API_KEY", "AIzaSyDwKD2Ixxxxxxxxxxxxxxxxxx")      # optional — falls back to rule-based
+GEMINI_KEY      = os.getenv("GEMINI_API_KEY", "AIzxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")      # optional — falls back to rule-based
 ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,http://localhost:3000").split(",")
 
 logging.basicConfig(level=logging.INFO)
@@ -560,3 +560,4 @@ async def get_reconciliation_data():
         logger.error("reconciliation error: %s", e)
 
         raise HTTPException(status_code=500, detail="Failed to fetch reconciliation data.")
+
