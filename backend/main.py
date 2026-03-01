@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 # ── Env ───────────────────────────────────────────────────────────────────────
 load_dotenv()
 
-NEO4J_URI       = os.getenv("NEO4J_URI",       "neo4j+s://5a216301.databases.neo4j.io")
+NEO4J_URI       = os.getenv("NEO4J_URI",       "neo4j+s://5eeeeeeee.databases.neo4j.io")
 NEO4J_USER      = os.getenv("NEO4J_USER",      "neo4j")
 NEO4J_PASSWORD  = os.getenv("NEO4J_PASSWORD", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 GEMINI_KEY      = os.getenv("GEMINI_API_KEY", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")      # optional — falls back to rule-based
